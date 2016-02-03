@@ -1,0 +1,765 @@
+@import 'reset.css';
+@import 'sprites';
+@import 'sprites_ipad';
+
+body {
+-moz-font-feature-settings: "liga", "kern";
+-moz-font-feature-settings:"liga=1, kern=1";
+-ms-font-feature-settings:"liga", "kern";
+-o-font-feature-settings:"liga", "kern";
+-webkit-font-feature-settings:"liga", "kern";
+font-feature-settings: "liga", "kern";
+}
+
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+@mixin calc($property, $expression) { 
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: -moz-calc(#{$expression}); 
+  #{$property}: calc(#{$expression}); 
+} 
+
+
+/*
+############################################################# embedding fonts #############################################
+/*
+
+Graphic Medium
+*/
+
+@font-face {
+font-family: 'Graphik Web';
+src: url('../assets/fonts/Graphik-Medium-Web.eot');
+src: url('../assets/fonts/Graphik-Medium-Web.eot?#iefix') format('embedded-opentype'),
+url('../assets/fonts/Graphik-Medium-Web.woff') format('woff');
+font-weight: 500;
+font-style: normal;
+font-stretch: normal;
+}
+
+.Graphik-Medium-Web {
+font-family: 'Graphik Web';
+font-weight: 500;
+font-style: normal;
+font-stretch: normal;
+}
+/*
+Graphic Regular
+*/
+
+@font-face {
+font-family: 'Graphik Web';
+src: url('../assets/fonts/Graphik-Regular-Web.eot');
+src: url('../assets/fonts/Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
+url('../assets/fonts/Graphik-Regular-Web.woff') format('woff');
+font-weight: 400;
+font-style: normal;
+font-stretch: normal;
+}
+
+
+
+.Graphik-Regular-Web {
+font-family: 'Graphik Web';
+font-weight: 400;
+font-style: normal;
+font-stretch: normal;
+}
+
+/*
+#######################################################################################
+*/
+
+
+
+
+.flexbox-container {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+}
+
+body {
+	font-size: 12px;
+	background: #941109;
+	transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	background-image: url(../assets/TNW_Timeline_Textless_bg.jpg);
+	background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 0;
+
+	&.not-ready {
+		opacity: 0;
+	}
+
+	&.started {
+		overflow: hidden;
+		#main-wrapper {
+			//overflow: hidden;
+		}
+		#splash {
+			display: none;
+		}
+		#ninja-warrior {
+			display: block;
+		}
+	}
+}
+
+.scroll-start {
+	.start-btn {
+		display: none;
+	}
+	#outer-wrapper {
+		//height: 200vh !important;
+	}
+}
+
+.click-start {
+	#ninja-warrior {
+		display: none;
+	}
+}
+
+.event-date {
+	opacity: 0;
+	transition: opacity 0.3s;
+	-webkit-transition: opacity 0.3s;
+}
+
+.start-btn {
+	@extend .sprite-ipad;
+	@extend .TNW_Splash_Start_n;
+	position: absolute;
+	cursor: pointer;
+	@include calc(left,'50% - 289px/2');
+	&:hover {
+		@extend .TNW_Splash_Start_s;
+	}
+}
+
+
+#navigation-controls {
+	z-index: 100;
+	position: relative;
+	top: -180px;
+}
+
+#youtube-player {
+	position: absolute;
+	background: black;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 100;
+	display: none;
+
+}
+
+.arrow-up {
+	@extend .sprite;
+	@extend .TNW_Timeline_Arrow_Up_n;
+	position: absolute;
+	left: 436px;
+	top: 475px;
+	@include transition(opacity 0.5s);
+	opacity: 1;
+	&.disabled {
+		opacity: 0;
+		&:hover {
+			@extend .TNW_Timeline_Arrow_Up_n;
+		}
+	}
+	&:hover {
+		@extend .TNW_Timeline_Arrow_Up_s;
+	}
+}
+
+.arrow-divide {
+	@extend .sprite;
+	@extend .TNW_Timeline_Arrow_Divide;
+	position: absolute;
+	left: 402px;
+    top: 534px; 
+}
+
+.arrow-down {
+	@extend .sprite;
+	@extend .TNW_Timeline_Arrow_Down_n;
+	position: absolute;
+	left: 436px;
+	top: 559px;
+	opacity: 1;
+	@include transition(opacity 0.5s);
+	&.disabled {
+		opacity: 0;
+		&:hover {
+			@extend .TNW_Timeline_Arrow_Down_n;
+		}
+	}
+	&:hover {
+		@extend .TNW_Timeline_Arrow_Down_s;
+	}
+}
+
+.play-btn {
+	display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(../assets/sprites_ipad.png);
+		 width:190px; height:190px; background-position: -194px -2px;
+		position: absolute;
+		@include calc(left,'50% - 177px/2');
+		@include calc(top,'50% - 177px/2');
+		&:hover {
+			width:190px; height:190px; background-position: -2px -2px;
+		}
+
+	
+}
+
+#ninja-warrior {
+  position: relative;
+  //background: url('../assets/TNW_Timeline_Textonly_bg.png') no-repeat;
+  width: 1920px;
+  height: 1080px + 500px;	
+  overflow: hidden;
+}
+
+#splash {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 1920px;
+	height: 1400px;	
+	z-index: 200;
+	//background: url('../assets/Splash/1920x1080/TNW_Splash_textless_bg.jpg') 50% 0  no-repeat;
+	background-size: cover;
+	.text-pic {
+		background: url('../assets/Splash/1920x1080/TNW_Splash_text.png')  no-repeat;
+		left: 551px;
+		top: 653px;
+		width: 816px;
+		height: 322px;
+	}
+	.logo {
+		background: url('../assets/Splash/1920x1080/TNW_Splash_logo.png')  no-repeat;
+		left: 516px;
+		top: 152px;
+		width: 854px;
+		height: 562px;
+	}
+	.swipe {
+		background: url('../assets/Splash/1920x1080/TNW_Splash_Swipe.png')  no-repeat;
+		left: 758px;
+		top: 836px;
+		width: 401px;
+		height: 228px;
+	}
+	span.bg {
+		position: absolute;
+		display: inline-block;
+	}
+	.start-btn {
+			top: 948px;
+			bottom: auto;
+		}
+}
+
+@media all and (orientation: landscape) {
+	#content-wrapper {
+		position: relative;
+		top: -180px;
+	}
+	#timelime-ui-wrapper {
+		position: absolute;
+	    top: 180px;
+	    left: 0;
+	    width: 100%;
+	    height: 100%
+	}
+
+	.started .timeline-wrapper {
+		//transform: scale(1.20) translateY(-60px) translateX(0px);
+	}
+}
+
+@media all and (orientation: portrait) {
+	#splash {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 1536px;
+		height: 2048px;
+		z-index: 200;
+		//background: url('../assets/Splash/iPad/TNW_Splash_textless_bg~iPad.jpg') 50% 0  no-repeat;
+		background-size: cover;
+		.text-pic {
+			background: url('../assets/Splash/iPad/TNW_Splash_text~iPad.png')  no-repeat;
+			left: 277px;
+			top: 1539px - 287px;
+			width: 978px;
+			height: 325px;
+		}
+		.logo {
+			background: url('../assets/Splash/iPad/TNW_Splash_logo~iPad.png')  no-repeat;
+			left: 87px;
+			top: 400px;
+			width: 1290px;
+			height: 846px;
+		}
+		.swipe {
+			display: none;
+		}
+		span.bg {
+			position: absolute;
+			display: inline-block;
+		}
+		.start-btn {
+			top: 1908px - 287px;
+			bottom: auto;
+		}
+	}
+}
+
+
+
+.click-start {
+	#splash {
+		.swipe {
+			display: none;
+		}
+	}
+}
+
+
+#main-wrapper {
+  width: 1920px;
+  height: 100%;	
+//  background: url('../assets/TNW_Timeline_1920x1080_bg.jpg') 0 100% no-repeat;
+ // overflow: hidden;
+  position: relative;
+  &.margin-0 {
+  	margin: 0 auto;
+  }
+
+	transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+
+ 
+  span#grad {
+  	display: inline-block;
+    width: 346px;
+    height: 133px;
+    background: url(../assets/bg_grad.png) no-repeat;
+    top: 225px;
+    position: absolute;
+    left: 0px;
+    z-index: 10;
+  }
+  span#chevron {
+  	position: absolute;
+  	top: 499px;
+  	left: 421px;
+  	width: 113px;
+  	height: 75px;
+  	background: url(../assets/TNW_TImeline_Chevron.png) no-repeat;
+  	display: inline-block;
+  }
+	.timeline-wrapper {
+		width: 100%;
+		height: 100%;
+		//overflow: hidden;
+
+		#content-wrapper {
+			> li {
+				&.content-bg {
+					@extend .sprite;
+					@extend .TNW_Timeline_Content_bg;
+					opacity: 1;
+					display: block;
+				}
+				width: 1382px;
+				opacity: 0;
+				font-family: sans-serif;
+				display: block;
+				position: absolute;
+				top: 132px;
+				right: 0;
+				color: white;
+				font-size: 25px;
+				padding: 0 0 0 143px;
+				box-sizing: border-box;
+				@include transition(opacity 0.75s);
+				overflow: hidden;
+
+				@media (min-width: 769px) and (orientation: landscape){
+					.last {
+						p {
+							top: 10px; /* Literally hardcoded the last one to be higher up cuz it's longer */
+						}
+					}
+				}
+
+				&.active {
+					opacity: 1;
+					z-index: 10;
+					h1 {
+						transform: translateX(0%);
+						@include transition(transform 0.5s);
+						@include transition(-webkit-transform 0.5s);
+					}
+				}
+				&.title-mask {
+					z-index: 100;
+					display: block;
+					opacity: 1;
+					overflow: visible;
+					div {
+						background: url(../assets/title_mask.png);
+						width: 154px;
+						height: 125px;
+						position: absolute;
+						top: -7px;
+						left: 5px;
+						z-index: 10;
+					}
+
+				}
+				.text-png {
+					position: absolute;
+					top: 343px - 132px;
+					left: 143px;
+
+				}
+				h1 {
+					font-size: 45px;
+					line-height: 97px;
+					margin-bottom: 100px;
+					@extend .Graphik-Medium-Web;
+    				transform: translateX(-100%);
+    				i {
+    					font-style: italic !important;
+    					margin-right: 10px;
+    				}
+				}
+				
+				p {
+					transform: perspective(1px);
+					font-size: 29px;
+					@extend .Graphik-Regular-Web;
+					line-height: 10 0;
+					width: 500px;
+    				line-height: 125%;
+    				float: left;
+    				position: relative;
+    				top: 33px;
+    				i {
+    					font-style: italic;
+    					margin-right: 10px;
+    					&.nospace {
+							margin-right: 0px;
+    					}
+    				}
+				}
+				.item-image {
+					float: right;
+				    position: relative;
+				    top: -43px;
+				    width: 707px;
+				    height: 655px;
+				    background-repeat: no-repeat;
+				    &.ipad {
+						display: none;
+					}
+				}
+			}
+		}
+
+		#timeline-dates-wrapper {
+			position: absolute;
+			right: 1582px;
+			top: 241px - 180px;
+			width: 300px;
+			height: 100%;
+			overflow: hidden;
+		}
+		
+		#timeline-dates {
+			position: absolute;
+		    right: 0px;
+		    top: 250px;
+
+		    transition: transform 0.5s;
+		    -webkit-transition: -webkit-transform 0.5s;
+			li {
+				position: relative;
+				width: 200px;
+				height: 83px;
+				padding-right: 30px;
+				text-align: right;
+				margin: 0 0px 40px 0;
+				.arrow {
+					opacity: 0.5;
+					position: absolute;
+					@include calc(top, '50% - 4px');
+					right: 0;
+				    left: inherit;
+				}
+				img {
+					position: absolute; 
+					top: 0;
+					right: 30px;
+					
+					@include transition(opacity 0.3s);
+					&.normal {
+						opacity: 1;
+					}
+				}
+				img.selected { opacity: 0; top: 6px; }
+				&.selected {
+					.arrow {
+						opacity: 1;
+					}
+					img.selected { opacity: 1; display: inline-block;}
+					img.normal { opacity: 0; display: inline-block;}
+				}
+			}
+		}
+
+		.timeline-title{
+			overflow: hidden;
+			left: -50px; 
+			position: relative;
+			padding-left: 50px;
+				-webkit-clip-path: polygon(48px 0,-9px 100%, 100% 100%, 100% 0);
+				clip-path: polygon(48px 0,19px 100%, 100% 100%, 100% 0);
+			h1 {
+				position: relative;
+				left: -49px;
+				padding-left: 50px;
+			}
+		}
+
+	}
+}
+
+#footer-caption {
+	background: url("../assets/TNW_Timeline_Bug.png");
+	display: inline-block;
+	position: absolute;
+	left: 1125px;
+	top: 1156px - 180px;
+	width: 765px;
+	height: 74px;
+	.ninjaWarrior-link {
+		position: absolute;
+		display: inline-block;
+		width: 271px;
+    	height: 100%;
+    	top: 0;
+    	left: 0;
+    	span {
+    		background-color: rgba(0,0,0,0);
+    		display: inline-block;
+    		width: 100%;
+    		height: 100%;
+    	}
+	}
+
+	.esquire-link {
+		position: absolute;
+		display: inline-block;
+		    position: absolute;
+	    display: inline-block;
+	    width: 273px;
+	    height: 100%;
+	    right: 0;
+		span {
+    		background-color: rgba(0,0,0,0);
+    		display: inline-block;
+    		width: 100%;
+    		height: 100%;
+    	}
+	}
+}
+
+#timeline-bar {
+	background: url("../assets/TNW_Timeline_VertBar.png");
+	width: 229px;
+	height: 995px;
+	position: absolute;
+	display: inline-block;
+	top: 261px - 180px;
+	left: 255px;
+	#bar-logo {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 150px;
+		span {
+			background-color: rgba(0,0,0,0);
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+
+		}
+	}
+}
+
+// if portrait and aspect ratio is greater than 2, center align contains
+@media screen and (min-aspect-ratio: 2/1) { 
+
+ }
+
+@media screen and (orientation: portrait) { /* Replace with orientation:portrait later */
+	body{
+		background-image:url("../assets/mobile/iPad/TNW_Timeline_bg.jpg");
+/*		background-repeat:no-repeat;*/
+	}
+
+	#footer-caption {
+		background: url("../assets/TNW_Timeline_Bug~iPad.png");
+		width: 915px;
+		height: 89px;
+		display: inline-block;
+		position: absolute;
+		left: 528px;
+		top: 1865px;
+		width: 915px;
+		height: 89px;
+	}
+
+	.play-btn {
+		display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(../assets/sprites_ipad.png);
+		 width:190px; height:190px; background-position: -194px -2px;
+		position: absolute;
+		@include calc(left, '50% - 177px/2');
+		@include calc(top, '50% - 177px/2');
+		&:hover {
+			width:190px; height:190px; background-position: -2px -2px;
+		}
+	}
+
+	#main-wrapper {
+		height:2048px;
+		width:1536px;
+		#ninja-warrior {
+			height:2048px;
+			@include calc(top, '50% - 1024px');
+
+			width:1536px;
+		}
+
+		#timeline-bar {
+			background: url("../assets/TNW_Timeline_VertBar~iPad.png") no-repeat;
+			width: 308px;
+			height: 1605px;
+			position: absolute;
+			display: inline-block;
+			top: 207px;
+    		left: 151px;
+    		#bar-logo {
+				height: 200px;
+    		}
+		}
+
+		/*Timeline*/
+	    .timeline-wrapper #timeline-dates-wrapper{
+	    	right:1275px;
+	    	top: 455px;
+			height: 1280px;
+	    }
+
+	    .timeline-wrapper #timeline-dates {
+	    	top: 323px;
+	    }
+
+	    .timeline-wrapper #timeline-dates li{
+	    	margin:0px 0px 84px 0px;
+	    }
+
+	    #navigation-controls{
+	    	top:284px;
+	    	left:-50px;
+	    }
+
+		.timeline-wrapper #content-wrapper > li.title-mask{
+	    	display:none;
+	    }
+
+	    span#grad{
+	    	display:none;
+	    }
+
+	    /* Right Side */
+	    .TNW_Timeline_Content_bg, .timeline-wrapper #content-wrapper > li.content-bg {
+	    	width:1244px;
+	    	height:960px;
+	    	background-image: url(../assets/mobile/iPad/TNW_Timeline_Content_bg~iPad.png);
+	    	overflow:visible; /*Text will appear underneath bg now */
+	    }
+
+	   .timeline-wrapper #content-wrapper > li{ /* right side container */
+	    	right:-215px;
+	    	overflow:visible;
+	    	top: 210px;
+	    }
+
+		.timeline-wrapper #content-wrapper > li .item-image{
+			left:113px;
+			top:118px;
+			float:none;
+			width: 920px;
+			display: none;
+			&.ipad {
+				display: block
+			}
+		}
+
+	    .timeline-wrapper .timeline-title{
+	    	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+
+
+			top: 0px;
+			height: 191px;
+	    	left:145px;
+	    	width:780px;
+	    }
+
+		.timeline-wrapper #content-wrapper > li h1{
+			line-height:50px;
+			margin: 0;
+		}
+
+	    .timeline-wrapper #content-wrapper > li p{
+	    	left:125px;
+	    	top:124px;
+	    	width:800px;
+	    	float:none;
+	    	z-index:2;
+	    	font-size: 40px;
+	    }
+	} /* End #main-wrapper */
+}

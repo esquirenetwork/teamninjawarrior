@@ -1,0 +1,104 @@
+[
+	{
+		"caption_img": {"normal":"TNW_Timeline_Japan1997_n", "selected": "TNW_Timeline_Japan1997_s"},
+		"type":"text",
+		"title":"<i>SASUKE</i> PREMIERES IN JAPAN",
+		"img": "TNW_Timeline_Content_Japan1997.jpg",
+		"text":"Launching in 1997, <i>Sasuke</i> premiered on Japan’s Tokyo Broadcasting System.<br><br>The three-hour sports phenomenon featured 100 competitors racing through a complex, four-stage obstacle course. Warriors had to complete each stage within the given time limit or go home empty-handed."
+	},
+	{
+		"caption_img": {"normal":"TNW_Timeline_Japan1999_n", "selected": "TNW_Timeline_Japan1999_s"},
+		"type":"text",
+		"img": "TNW_Timeline_Content_Japan1999.jpg",
+		"title":"FIRST <i>SASUKE</i> TOTAL VICTORY",
+		"text":"In 1999, a crab fisherman named Akiyama Kazuhiko was the first warrior to complete the fourth and final stage - with 6 seconds to spare."
+	},
+	{
+		"caption_img": {"normal":"TNW_Timeline_Japan2001_n", "selected": "TNW_Timeline_Japan2001_s"},
+		"type":"text",
+		"img": "TNW_Timeline_Content_Japan2001.jpg",
+		"title":"<i>KUNOICHI</i> PREMIERES ",
+		"text":"Amidst the growing popularity of <i class='nospace'>Sasuke,</i> a tournament exclusively for women was introduced as <i class='nospace'>Kunoichi</i> in 2001. <br><br>This new show paved the way for female contestants like <i style='margin-right: 5px;'>American Ninja Warrior</i>'s Kacy Catanzaro."
+	},
+	{
+		"caption_img": {"normal":"TNW_Timeline_Japan2006_n", "selected": "TNW_Timeline_Japan2006_s"},
+		"type":"text",
+		"title":"SECOND <i>SASUKE</i> TOTAL VICTORY",
+		"img": "TNW_Timeline_Content_Japan2006.jpg",
+		"text":"It took seven years after Akiyama Kazuhiko for the second competitor, Nagano Makoto, to complete the final stage of the <i>Sasuke</i> course."
+	},
+	{
+		"caption_img": {"normal":"TNW_Timeline_LosAngeles2007_n", "selected": "TNW_Timeline_LosAngeles2007_s"},
+		"type":"text",
+		"title":"<i>AMERICAN NINJA CHALLENGE</i> PREMIERES",
+		"img": "TNW_Timeline_Content_LosAngeles2007.jpg",
+		"text":"In 2007, G4 created <i style='margin-right: 0'>American Ninja Challenge,</i> a nationwide competition in which American contestants competed for the title of American Ninja. <br><br>Finalists that were able to complete the final stage won a trip to compete in the <i style='margin-right: 7px;'>Sasuke</i> tournament in Japan."
+	},
+	{
+		"caption_img": {"normal":"TNW_Timeline_LosAngeles2009_n", "selected": "TNW_Timeline_LosAngeles2009_s"},
+		"type":"text",
+		"title":"<i>AMERICAN NINJA WARRIOR</i> PREMIERES",
+		"img": "TNW_Timeline_Content_LosAngeles2009.jpg",
+		"text":"The successor to <i style='margin-right: 0'>American Ninja Challenge,</i> <i>American Ninja Warrior</i> would once again serve as a qualifying round for American competitors to compete in the <i style='margin-right: 7px;'>Sasuke</i> tournament in Japan."
+	},
+	{
+		"caption_img": {"normal":"TNW_Timeline_LasVegas2012_n", "selected": "TNW_Timeline_LasVegas2012_s"},
+		"type":"text",
+		"title":"MOUNT MIDORIYAMA RECREATED IN THE US",
+		"img": "TNW_Timeline_Content_LasVegas2012.jpg",
+		"video": "PQo3QA7gb4M",
+		"text":"For Season 4 of <i style='margin-right: 0'>American Ninja Warrior,</i> rather than sending winners to Japan, a replica of Mount Midoriyama was erected in Las Vegas where 100 finalists from city qualifiers battled it out for the title of <i style='margin-right: 0;'>American Ninja Warrior</i>."
+	},
+	{
+		"caption_img": {"normal":"TNW_Timeline_Dallas2014_n", "selected": "TNW_Timeline_Dallas2014_s"},
+		"type":"text",
+		"img": "TNW_Timeline_Content_Dallas2014.jpg",
+		"video": "jzeQilqoF-A",
+		"title":"FIRST WOMAN COMPLETES <i>ANW</i> COURSE",
+		"text":"Kacy Catanzaro became the first woman to attempt and complete the <i>American Ninja Warrior</i> course in a national qualifying round."
+	},
+	{
+		"caption_img": {"normal":"TNW_Timeline_LasVegas2014_n", "selected": "TNW_Timeline_LasVegas2014_s"},
+		"type":"text",
+		"title":"USA vs JAPAN",
+		"img": "TNW_Timeline_Content_LasVegas2014_01.jpg",
+		"video": "C6kFfHR9d98",
+		"text":"For the first time ever, all-star warriors from the USA faced off against Japanese all-stars in Las Vegas."
+	},
+	{
+		"caption_img": {"normal":"TNW_Timeline_LasVegas2014_n", "selected": "TNW_Timeline_LasVegas2014_s"},
+		"type":"text",
+		"img": "TNW_Timeline_Content_LasVegas2014_02.jpg",
+		"title":"USA vs THE WORLD",
+		"video": "KX9eGw8Urzk",
+		"text":"This second international match-up pitted the USA all-star warriors against the returning Japanese and European all-stars in a throw down to see who was the greatest warrior of them all."
+	},
+	{
+		"caption_img": {"normal":"TNW_Timeline_LasVegas2015_n", "selected": "TNW_Timeline_LasVegas2015_s"},
+		"type":"text",
+		"title":"FIRST <i>AMERICAN NINJA WARRIOR</i> NAMED",
+		"img": "TNW_Timeline_Content_LasVegas2015.jpg",
+		"video": "Z-ztFvXP6nA",
+		"text":"In Season 7, two warriors reached the final stage for the first time ever in the history of <i style='margin-right: 0;'>American Ninja Warrior</i>.<br><br>Isaac Caldiero, a busboy from Colorado, achieved total victory by beating out Geoff Britten in a 75-foot vertical rope climb."
+	},
+	{
+		"caption_img": {"normal":"TNW_Timeline_LosAngeles2016_n", "selected": "TNW_Timeline_LosAngeles2016_s"},
+		"type":"text",
+		"className": "last",
+		"title":"<i>TEAM NINJA WARRIOR</i> PREMIERES",
+		"img": "TNW_Timeline_Content_LosAngeles2016.jpg",
+		"video": "0HoTtKDWgww",
+		"text":"Esquire Network presents an astounding new twist on Ninja Warrior. For the first time ever, viewers will get to see their favorite warriors form teams and compete head-to-head and side-by-side on a newly designed Ninja Warrior course.<br><br>Teams will be made up of everyone from <i>American Ninja Warrior</i> legends to first-time competitors. <i>Team Ninja Warrior</i> premiered January 19. Watch Tuesdays at 8|7c only on Esquire Network."
+	}
+
+]
+
+
+
+
+
+
+
+
+
+

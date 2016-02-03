@@ -1,0 +1,811 @@
+@import url(reset.css);
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:cfbd8250ef99d489527ff96b4c311009:3e00cb127a59ffa4c15f4aa5c67a199b:fdaab671797ff281ba79188aadad068c$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+.sprite, .arrow-up, .arrow-divide, .arrow-down, #main-wrapper .timeline-wrapper #content-wrapper > li.content-bg {
+  display: inline-block;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-image: url(../assets/sprites.png);
+}
+
+.TNW_Timeline_Arrow_Divide, .arrow-divide {
+  width: 136px;
+  height: 3px;
+  background-position: -1386px -518px;
+}
+
+.TNW_Timeline_Arrow_Down_n, .arrow-down, .arrow-down.disabled:hover {
+  width: 72px;
+  height: 35px;
+  background-position: -1565px -271px;
+}
+
+.TNW_Timeline_Arrow_Down_s, .arrow-down:hover {
+  width: 72px;
+  height: 35px;
+  background-position: -1565px -234px;
+}
+
+.TNW_Timeline_Arrow_Up_n, .arrow-up, .arrow-up.disabled:hover {
+  width: 72px;
+  height: 35px;
+  background-position: -1565px -197px;
+}
+
+.TNW_Timeline_Arrow_Up_s, .arrow-up:hover {
+  width: 72px;
+  height: 35px;
+  background-position: -1565px -160px;
+}
+
+.TNW_Timeline_Content_bg, #main-wrapper .timeline-wrapper #content-wrapper > li.content-bg {
+  width: 1382px;
+  height: 810px;
+  background-position: -2px -2px;
+}
+
+.TNW_Timeline_Play_n {
+  width: 177px;
+  height: 177px;
+  background-position: -1386px -339px;
+}
+
+.TNW_Timeline_Play_s {
+  width: 177px;
+  height: 177px;
+  background-position: -1386px -160px;
+}
+
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:368ee977cb24ede3d65c1bfb22a54d66:09bf1330e6e030296277970d0e504b65:9944d18fe59dc01ae6af000c5343f9db$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+.sprite-ipad, .start-btn {
+  display: inline-block;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-image: url(../assets/sprites_ipad.png);
+}
+
+.TNW_Splash_Start_n, .start-btn {
+  width: 271px;
+  height: 73px;
+  background-position: -822px -77px;
+}
+
+.TNW_Splash_Start_s, .start-btn:hover {
+  width: 271px;
+  height: 73px;
+  background-position: -822px -2px;
+}
+
+.TNW_Splash_Start ~ iPad_n {
+  width: 434px;
+  height: 116px;
+  background-position: -386px -120px;
+}
+
+.TNW_Splash_Start ~ iPad_s {
+  width: 434px;
+  height: 116px;
+  background-position: -386px -2px;
+}
+
+.TNW_Timeline_Content_Play_n {
+  width: 190px;
+  height: 190px;
+  background-position: -194px -2px;
+}
+
+.TNW_Timeline_Content_Play_s {
+  width: 190px;
+  height: 190px;
+  background-position: -2px -2px;
+}
+
+body {
+  -moz-font-feature-settings: "liga", "kern";
+  -moz-font-feature-settings: "liga=1, kern=1";
+  -ms-font-feature-settings: "liga", "kern";
+  -o-font-feature-settings: "liga", "kern";
+  -webkit-font-feature-settings: "liga", "kern";
+  font-feature-settings: "liga", "kern";
+}
+
+/*
+############################################################# embedding fonts #############################################
+/*
+
+Graphic Medium
+*/
+@font-face {
+  font-family: 'Graphik Web';
+  src: url("../assets/fonts/Graphik-Medium-Web.eot");
+  src: url("../assets/fonts/Graphik-Medium-Web.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Graphik-Medium-Web.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.Graphik-Medium-Web, #main-wrapper .timeline-wrapper #content-wrapper > li h1 {
+  font-family: 'Graphik Web';
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+/*
+Graphic Regular
+*/
+@font-face {
+  font-family: 'Graphik Web';
+  src: url("../assets/fonts/Graphik-Regular-Web.eot");
+  src: url("../assets/fonts/Graphik-Regular-Web.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Graphik-Regular-Web.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.Graphik-Regular-Web, #main-wrapper .timeline-wrapper #content-wrapper > li p {
+  font-family: 'Graphik Web';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+/*
+#######################################################################################
+*/
+.flexbox-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+body {
+  font-size: 12px;
+  background: #941109;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  background-image: url(../assets/TNW_Timeline_Textless_bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 0;
+}
+body.not-ready {
+  opacity: 0;
+}
+body.started {
+  overflow: hidden;
+}
+body.started #splash {
+  display: none;
+}
+body.started #ninja-warrior {
+  display: block;
+}
+
+.scroll-start .start-btn {
+  display: none;
+}
+
+.click-start #ninja-warrior {
+  display: none;
+}
+
+.event-date {
+  opacity: 0;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+}
+
+.start-btn {
+  position: absolute;
+  cursor: pointer;
+  left: -webkit-calc(50% - 289px/2);
+  left: -moz-calc(50% - 289px/2);
+  left: calc(50% - 289px/2);
+}
+
+#navigation-controls {
+  z-index: 100;
+  position: relative;
+  top: -180px;
+}
+
+#youtube-player {
+  position: absolute;
+  background: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 100;
+  display: none;
+}
+
+.arrow-up {
+  position: absolute;
+  left: 436px;
+  top: 475px;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+.arrow-up.disabled {
+  opacity: 0;
+}
+
+.arrow-divide {
+  position: absolute;
+  left: 402px;
+  top: 534px;
+}
+
+.arrow-down {
+  position: absolute;
+  left: 436px;
+  top: 559px;
+  opacity: 1;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.arrow-down.disabled {
+  opacity: 0;
+}
+
+.play-btn {
+  display: inline-block;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-image: url(../assets/sprites_ipad.png);
+  width: 190px;
+  height: 190px;
+  background-position: -194px -2px;
+  position: absolute;
+  left: -webkit-calc(50% - 177px/2);
+  left: -moz-calc(50% - 177px/2);
+  left: calc(50% - 177px/2);
+  top: -webkit-calc(50% - 177px/2);
+  top: -moz-calc(50% - 177px/2);
+  top: calc(50% - 177px/2);
+}
+.play-btn:hover {
+  width: 190px;
+  height: 190px;
+  background-position: -2px -2px;
+}
+
+#ninja-warrior {
+  position: relative;
+  width: 1920px;
+  height: 1580px;
+  overflow: hidden;
+}
+
+#splash {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1400px;
+  z-index: 200;
+  background-size: cover;
+}
+#splash .text-pic {
+  background: url("../assets/Splash/1920x1080/TNW_Splash_text.png") no-repeat;
+  left: 551px;
+  top: 653px;
+  width: 816px;
+  height: 322px;
+}
+#splash .logo {
+  background: url("../assets/Splash/1920x1080/TNW_Splash_logo.png") no-repeat;
+  left: 516px;
+  top: 152px;
+  width: 854px;
+  height: 562px;
+}
+#splash .swipe {
+  background: url("../assets/Splash/1920x1080/TNW_Splash_Swipe.png") no-repeat;
+  left: 758px;
+  top: 836px;
+  width: 401px;
+  height: 228px;
+}
+#splash span.bg {
+  position: absolute;
+  display: inline-block;
+}
+#splash .start-btn {
+  top: 948px;
+  bottom: auto;
+}
+
+@media all and (orientation: landscape) {
+  #content-wrapper {
+    position: relative;
+    top: -180px;
+  }
+
+  #timelime-ui-wrapper {
+    position: absolute;
+    top: 180px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media all and (orientation: portrait) {
+  #splash {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1536px;
+    height: 2048px;
+    z-index: 200;
+    background-size: cover;
+  }
+  #splash .text-pic {
+    background: url("../assets/Splash/iPad/TNW_Splash_text~iPad.png") no-repeat;
+    left: 277px;
+    top: 1252px;
+    width: 978px;
+    height: 325px;
+  }
+  #splash .logo {
+    background: url("../assets/Splash/iPad/TNW_Splash_logo~iPad.png") no-repeat;
+    left: 87px;
+    top: 400px;
+    width: 1290px;
+    height: 846px;
+  }
+  #splash .swipe {
+    display: none;
+  }
+  #splash span.bg {
+    position: absolute;
+    display: inline-block;
+  }
+  #splash .start-btn {
+    top: 1621px;
+    bottom: auto;
+  }
+}
+.click-start #splash .swipe {
+  display: none;
+}
+
+#main-wrapper {
+  width: 1920px;
+  height: 100%;
+  position: relative;
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+}
+#main-wrapper.margin-0 {
+  margin: 0 auto;
+}
+#main-wrapper span#grad {
+  display: inline-block;
+  width: 346px;
+  height: 133px;
+  background: url(../assets/bg_grad.png) no-repeat;
+  top: 225px;
+  position: absolute;
+  left: 0px;
+  z-index: 10;
+}
+#main-wrapper span#chevron {
+  position: absolute;
+  top: 499px;
+  left: 421px;
+  width: 113px;
+  height: 75px;
+  background: url(../assets/TNW_TImeline_Chevron.png) no-repeat;
+  display: inline-block;
+}
+#main-wrapper .timeline-wrapper {
+  width: 100%;
+  height: 100%;
+}
+#main-wrapper .timeline-wrapper #content-wrapper > li {
+  width: 1382px;
+  opacity: 0;
+  font-family: sans-serif;
+  display: block;
+  position: absolute;
+  top: 132px;
+  right: 0;
+  color: white;
+  font-size: 25px;
+  padding: 0 0 0 143px;
+  box-sizing: border-box;
+  -moz-transition: opacity 0.75s;
+  -o-transition: opacity 0.75s;
+  -webkit-transition: opacity 0.75s;
+  transition: opacity 0.75s;
+  overflow: hidden;
+}
+#main-wrapper .timeline-wrapper #content-wrapper > li.content-bg {
+  opacity: 1;
+  display: block;
+}
+@media (min-width: 769px) and (orientation: landscape) {
+  #main-wrapper .timeline-wrapper #content-wrapper > li .last p {
+    top: 10px;
+    /* Literally hardcoded the last one to be higher up cuz it's longer */
+  }
+}
+#main-wrapper .timeline-wrapper #content-wrapper > li.active {
+  opacity: 1;
+  z-index: 10;
+}
+#main-wrapper .timeline-wrapper #content-wrapper > li.active h1 {
+  transform: translateX(0%);
+  -moz-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  transition: transform 0.5s;
+  -moz-transition: -webkit-transform 0.5s;
+  -o-transition: -webkit-transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+}
+#main-wrapper .timeline-wrapper #content-wrapper > li.title-mask {
+  z-index: 100;
+  display: block;
+  opacity: 1;
+  overflow: visible;
+}
+#main-wrapper .timeline-wrapper #content-wrapper > li.title-mask div {
+  background: url(../assets/title_mask.png);
+  width: 154px;
+  height: 125px;
+  position: absolute;
+  top: -7px;
+  left: 5px;
+  z-index: 10;
+}
+#main-wrapper .timeline-wrapper #content-wrapper > li .text-png {
+  position: absolute;
+  top: 211px;
+  left: 143px;
+}
+#main-wrapper .timeline-wrapper #content-wrapper > li h1 {
+  font-size: 45px;
+  line-height: 97px;
+  margin-bottom: 100px;
+  transform: translateX(-100%);
+}
+#main-wrapper .timeline-wrapper #content-wrapper > li h1 i {
+  font-style: italic !important;
+  margin-right: 10px;
+}
+#main-wrapper .timeline-wrapper #content-wrapper > li p {
+  transform: perspective(1px);
+  font-size: 29px;
+  line-height: 10 0;
+  width: 500px;
+  line-height: 125%;
+  float: left;
+  position: relative;
+  top: 33px;
+}
+#main-wrapper .timeline-wrapper #content-wrapper > li p i {
+  font-style: italic;
+  margin-right: 10px;
+}
+#main-wrapper .timeline-wrapper #content-wrapper > li p i.nospace {
+  margin-right: 0px;
+}
+#main-wrapper .timeline-wrapper #content-wrapper > li .item-image {
+  float: right;
+  position: relative;
+  top: -43px;
+  width: 707px;
+  height: 655px;
+  background-repeat: no-repeat;
+}
+#main-wrapper .timeline-wrapper #content-wrapper > li .item-image.ipad {
+  display: none;
+}
+#main-wrapper .timeline-wrapper #timeline-dates-wrapper {
+  position: absolute;
+  right: 1582px;
+  top: 61px;
+  width: 300px;
+  height: 100%;
+  overflow: hidden;
+}
+#main-wrapper .timeline-wrapper #timeline-dates {
+  position: absolute;
+  right: 0px;
+  top: 250px;
+  transition: transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+}
+#main-wrapper .timeline-wrapper #timeline-dates li {
+  position: relative;
+  width: 200px;
+  height: 83px;
+  padding-right: 30px;
+  text-align: right;
+  margin: 0 0px 40px 0;
+}
+#main-wrapper .timeline-wrapper #timeline-dates li .arrow {
+  opacity: 0.5;
+  position: absolute;
+  top: -webkit-calc(50% - 4px);
+  top: -moz-calc(50% - 4px);
+  top: calc(50% - 4px);
+  right: 0;
+  left: inherit;
+}
+#main-wrapper .timeline-wrapper #timeline-dates li img {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+#main-wrapper .timeline-wrapper #timeline-dates li img.normal {
+  opacity: 1;
+}
+#main-wrapper .timeline-wrapper #timeline-dates li img.selected {
+  opacity: 0;
+  top: 6px;
+}
+#main-wrapper .timeline-wrapper #timeline-dates li.selected .arrow {
+  opacity: 1;
+}
+#main-wrapper .timeline-wrapper #timeline-dates li.selected img.selected {
+  opacity: 1;
+  display: inline-block;
+}
+#main-wrapper .timeline-wrapper #timeline-dates li.selected img.normal {
+  opacity: 0;
+  display: inline-block;
+}
+#main-wrapper .timeline-wrapper .timeline-title {
+  overflow: hidden;
+  left: -50px;
+  position: relative;
+  padding-left: 50px;
+  -webkit-clip-path: polygon(48px 0, -9px 100%, 100% 100%, 100% 0);
+  clip-path: polygon(48px 0, 19px 100%, 100% 100%, 100% 0);
+}
+#main-wrapper .timeline-wrapper .timeline-title h1 {
+  position: relative;
+  left: -49px;
+  padding-left: 50px;
+}
+
+#footer-caption {
+  background: url("../assets/TNW_Timeline_Bug.png");
+  display: inline-block;
+  position: absolute;
+  left: 1125px;
+  top: 976px;
+  width: 765px;
+  height: 74px;
+}
+#footer-caption .ninjaWarrior-link {
+  position: absolute;
+  display: inline-block;
+  width: 271px;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#footer-caption .ninjaWarrior-link span {
+  background-color: rgba(0, 0, 0, 0);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+#footer-caption .esquire-link {
+  position: absolute;
+  display: inline-block;
+  position: absolute;
+  display: inline-block;
+  width: 273px;
+  height: 100%;
+  right: 0;
+}
+#footer-caption .esquire-link span {
+  background-color: rgba(0, 0, 0, 0);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+#timeline-bar {
+  background: url("../assets/TNW_Timeline_VertBar.png");
+  width: 229px;
+  height: 995px;
+  position: absolute;
+  display: inline-block;
+  top: 81px;
+  left: 255px;
+}
+#timeline-bar #bar-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+}
+#timeline-bar #bar-logo span {
+  background-color: rgba(0, 0, 0, 0);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (orientation: portrait) {
+  /* Replace with orientation:portrait later */
+  body {
+    background-image: url("../assets/mobile/iPad/TNW_Timeline_bg.jpg");
+    /*		background-repeat:no-repeat;*/
+  }
+
+  #footer-caption {
+    background: url("../assets/TNW_Timeline_Bug~iPad.png");
+    width: 915px;
+    height: 89px;
+    display: inline-block;
+    position: absolute;
+    left: 528px;
+    top: 1865px;
+    width: 915px;
+    height: 89px;
+  }
+
+  .play-btn {
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url(../assets/sprites_ipad.png);
+    width: 190px;
+    height: 190px;
+    background-position: -194px -2px;
+    position: absolute;
+    left: -webkit-calc(50% - 177px/2);
+    left: -moz-calc(50% - 177px/2);
+    left: calc(50% - 177px/2);
+    top: -webkit-calc(50% - 177px/2);
+    top: -moz-calc(50% - 177px/2);
+    top: calc(50% - 177px/2);
+  }
+  .play-btn:hover {
+    width: 190px;
+    height: 190px;
+    background-position: -2px -2px;
+  }
+
+  #main-wrapper {
+    height: 2048px;
+    width: 1536px;
+    /*Timeline*/
+    /* Right Side */
+  }
+  #main-wrapper #ninja-warrior {
+    height: 2048px;
+    top: -webkit-calc(50% - 1024px);
+    top: -moz-calc(50% - 1024px);
+    top: calc(50% - 1024px);
+    width: 1536px;
+  }
+  #main-wrapper #timeline-bar {
+    background: url("../assets/TNW_Timeline_VertBar~iPad.png") no-repeat;
+    width: 308px;
+    height: 1605px;
+    position: absolute;
+    display: inline-block;
+    top: 207px;
+    left: 151px;
+  }
+  #main-wrapper #timeline-bar #bar-logo {
+    height: 200px;
+  }
+  #main-wrapper .timeline-wrapper #timeline-dates-wrapper {
+    right: 1275px;
+    top: 455px;
+    height: 1280px;
+  }
+  #main-wrapper .timeline-wrapper #timeline-dates {
+    top: 323px;
+  }
+  #main-wrapper .timeline-wrapper #timeline-dates li {
+    margin: 0px 0px 84px 0px;
+  }
+  #main-wrapper #navigation-controls {
+    top: 284px;
+    left: -50px;
+  }
+  #main-wrapper .timeline-wrapper #content-wrapper > li.title-mask {
+    display: none;
+  }
+  #main-wrapper span#grad {
+    display: none;
+  }
+  #main-wrapper .TNW_Timeline_Content_bg, #main-wrapper .timeline-wrapper #content-wrapper > li.content-bg, #main-wrapper .timeline-wrapper #content-wrapper > li.content-bg {
+    width: 1244px;
+    height: 960px;
+    background-image: url(../assets/mobile/iPad/TNW_Timeline_Content_bg~iPad.png);
+    overflow: visible;
+    /*Text will appear underneath bg now */
+  }
+  #main-wrapper .timeline-wrapper #content-wrapper > li {
+    /* right side container */
+    right: -215px;
+    overflow: visible;
+    top: 210px;
+  }
+  #main-wrapper .timeline-wrapper #content-wrapper > li .item-image {
+    left: 113px;
+    top: 118px;
+    float: none;
+    width: 920px;
+    display: none;
+  }
+  #main-wrapper .timeline-wrapper #content-wrapper > li .item-image.ipad {
+    display: block;
+  }
+  #main-wrapper .timeline-wrapper .timeline-title {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    top: 0px;
+    height: 191px;
+    left: 145px;
+    width: 780px;
+  }
+  #main-wrapper .timeline-wrapper #content-wrapper > li h1 {
+    line-height: 50px;
+    margin: 0;
+  }
+  #main-wrapper .timeline-wrapper #content-wrapper > li p {
+    left: 125px;
+    top: 124px;
+    width: 800px;
+    float: none;
+    z-index: 2;
+    font-size: 40px;
+  }
+
+  /* End #main-wrapper */
+}
